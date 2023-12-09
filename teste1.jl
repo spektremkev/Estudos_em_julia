@@ -1,12 +1,12 @@
 using Printf
-using InteractiveUtils.
+using InteractiveUtils
 # primeira de demostração de codigo em Julia
 
 variavel = 10
 
 variavel2 = 20
 
-variavel3 = variavel + variavel2
+ variavel3 = variavel + variavel2
 
 mensagem = "O valor da variável 3 é:"
 
@@ -19,9 +19,9 @@ println(variavel3)
 nome = "Alice"
 idade = 25
 
-@printf mensagem = "Olá, meu nome é " * nome * " e eu tenho " * string(idade) * " anos."
+ mensagem = "Olá, meu nome é " * nome * " e eu tenho " * string(idade) * " anos."
 
-@label println(mensagem)
+@code_llvm println(mensagem)
 
 s1 = "Olá"
 s2 = "Mundo"
@@ -30,3 +30,34 @@ println(s) # Saída: Olá, Mundo!
 
 println("Ola, mundo!")
 
+raio = 5
+area = π * raio^2
+
+@code_llvm println("A área do círculo é: ", area)
+
+10 ÷ 3
+
+10 % 3
+
+10 ÷ 3
+
+10 % 3
+
+var4 = √(10)
+
+println(var4)
+
+#----------
+
+🐈 = "factorial"
+
+🐶 = [3,3]
+
+println(🐶)
+
+println(🐈)
+
+
+#----------
+
+println("10 ÷ 3 = ", 10 ÷ 3)
