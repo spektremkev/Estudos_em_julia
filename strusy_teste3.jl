@@ -1,10 +1,12 @@
 #declaração de struct basica em Julia
 
 struct MyType
-    x
+    volta_x = x::Int
+
+    return volta_x
 end
 
-mytype = MyType(x = 10)
+mytype = volta_x(x)
 
 
 println(mytype.x)
